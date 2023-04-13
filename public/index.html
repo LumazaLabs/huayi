@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <title>Sophistication at Scale | Diva Luce</title>
+  </head>
+  <body>
+    <div class="relative bg-[url('./images/bg.webp')] bg-cover h-screen group">
+      <div class="absolute h-full w-full bg-[rgba(0,0,0,0.55)]"></div>
+
+      <header class="relative">
+        <!-- lg+ -->
+        <div class="relative bg-transparent max-w-7xl mx-auto">
+          <div class="absolute inset-0"></div>
+
+          <div class="absolute inset-0"></div>
+
+          <div class="relative py-2 px-4 mx-auto sm:px-6 lg:px-8">
+            <nav class="flex items-center justify-between h-auto">
+              <div class="flex-shrink- 0">
+                <a
+                  href="index.html"
+                  title="Go to the Champagne Lane Homepage"
+                  class="flex"
+                >
+                  <img
+                    class="w-auto h-14 md:h-16 xl:h-16"
+                    src="images/logo.webp"
+                    alt="Champagne Lane Resort Logo"
+                  />
+                </a>
+              </div>
+
+              <button
+                type="button"
+                id="menu-btn"
+                class="inline-flex p-2 text-adopt transition-all duration-200 rounded-2xl lg:hidden focus:text-adopt-dark hover:text-adopt-dark"
+              >
+                <svg
+                  class="w-7 h-7"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h16m-7 6h7"
+                  />
+                </svg>
+              </button>
+
+              <div class="hidden lg:flex lg:items-center lg:space-x-10">
+                <a
+                  href="services.html"
+                  title="View the various Chalet options at Champagne Lane Resort"
+                  class="text-base font-medium text-white hover:translate-x-1 focus:translate-x-1 transition-all duration-200"
+                >
+                  Services
+                </a>
+
+                <a
+                  href="about-us.html"
+                  title="View the various activities you and your family can enjoy while at Champagne Lane Resort"
+                  class="text-base font-medium text-white hover:translate-x-1 focus:translate-x-1 transition-all duration-200"
+                >
+                  About Us
+                </a>
+
+                <a
+                  href="time-share.html"
+                  title="View the different projects options available at Champagne Lane Resort"
+                  class="text-base font-medium text-white hover:translate-x-1 focus:translate-x-1 transition-all duration-200"
+                >
+                  Projects
+                </a>
+
+                <a
+                  href="contact-us.html"
+                  title="View Champagne Lane Resort's contact information and where we are located."
+                  class="text-base font-medium text-white hover:translate-x-1 focus:translate-x-1 transition-all duration-200"
+                >
+                  Contact
+                </a>
+
+                <a
+                  href="quote.html"
+                  title="Book your stay with us at Champagne Lane"
+                  class="inline-flex items-center justify-center px-12 py-2.5 text-base font-medium bg-transparent ring-inset ring-orange ring-2 text-white transition-all duration-200 ring-offset-transparent hover:ring-offset-2 focus:ring-offset-2"
+                  role="button"
+                >
+                  Get a Quote
+                </a>
+              </div>
+            </nav>
+
+            <!-- xs to lg -->
+            <nav
+              id="phone-menu"
+              class="hidden ease-in flex-col w-screen h-screen fixed overflow-hidden top-0 right-0 z-10 px-10 py-10 bg-gray-50 sm:px-6"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+                id="exit-btn"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+
+              <div class="flex flex-col flex-grow h-full items-end">
+                <nav class="flex flex-col space-y-2 items-end">
+                  <a
+                    href="training.html"
+                    title="We offer many courses amongst many different sectors to enable and empower people around us. Take a look at the various courses we have to offer."
+                    class="flex py-2 font-medium text-blue transition-all duration-200 hover:translate-x-1 focus:translate-x-1"
+                  >
+                    Training
+                  </a>
+
+                  <a
+                    href="npo.html"
+                    title="Learn more about how we give back to the community."
+                    class="flex py-2 font-medium text-blue transition-all duration-200 hover:translate-x-1 focus:translate-x-1"
+                  >
+                    Giving Back
+                  </a>
+
+                  <a
+                    href="media.html"
+                    title="Abaguquli has been featured in the media multiple times. View the articles and posts we have recently been featured in"
+                    class="flex py-2 font-medium text-blue transition-all duration-200 hover:translate-x-1 focus:translate-x-1"
+                  >
+                    Media
+                  </a>
+                </nav>
+
+                <div class="flex flex-col mt-6">
+                  <a
+                    href="contact-us.html"
+                    title="Get in touch with us!"
+                    class="inline-flex items-end justify-center px-8 py-2.5 text-base font-medium bg-gradient-to-r from-blue to-purple text-white transition-all duration-200 border border-transparent rounded-full hover:shadow-md hover:shadow-purple"
+                    role="button"
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </header>
+
+      <!-- HERO SECTION -->
+
+      <section class="relative top-[40%] -translate-y-1/2 bg-transparent">
+        <div
+          class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8 text-center md:text-left"
+        >
+          <h1
+            class="text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white"
+          >
+            Sophistication<br />
+            at Scale<span class="text-orange group-hover:animate-bounce"
+              >.</span
+            >
+          </h1>
+          <p class="text-white tracking-wide md:w-1/2 pt-10">
+            Sophistication is appreciated in bite size pieces, but as to it’s
+            conception and creation, the possibilities are limitless.
+          </p>
+          <div class="pt-5">
+            <a
+              href="#"
+              class="inline-flex items-center justify-center px-12 py-2.5 text-base font-medium bg-transparent ring-inset ring-orange ring-2 text-white transition-all duration-200 ring-offset-transparent hover:ring-offset-2 focus:ring-offset-2"
+              role="button"
+              >Learn More
+            </a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- PROJECT TYPES -->
+
+    <section class="py-8 bg-transparent md:py-8 lg:py-16">
+      <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+        <h2
+          class="mt-6 text-3xl font-bold tracking-tight lg:mt-8 sm:text-3xl lg:text-4xl xl:text-5xl"
+        >
+          Project Types
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-16"
+        >
+          <div class="pt-16">
+            <img
+              src="images/commercial-lighting.webp"
+              alt="Image of an example of Commercial Lighting"
+              class="w-full h-auto"
+            />
+            <p class="text-gray-900 text-2xl lg:text-3xl font-semibold pt-8">
+              Retail
+            </p>
+            <p class="text-base text-gray-500 pt-3">
+              From hotels and restaurants to entire shopping malls Diva Luce
+              will cater to your every need.
+            </p>
+            <div class="pt-5">
+              <a
+                href="#"
+                class="inline-flex items-center justify-center px-8 py-2.5 text-base font-medium tracking-wide bg-transparent ring-inset ring-orange ring-2 text-gray-900 transition-all duration-200 ring-offset-transparent hover:ring-offset-2 focus:ring-offset-2"
+                role="button"
+                >Learn More
+              </a>
+            </div>
+          </div>
+          <div class="pt-16">
+            <img
+              src="images/home-lighting.webp"
+              alt="Image of an example of Commercial Lighting"
+              class="w-full h-auto"
+            />
+            <p class="text-gray-900 text-2xl lg:text-3xl font-semibold pt-8">
+              Home
+            </p>
+            <p class="text-base text-gray-500 pt-3">
+              Creating the dream home is never easy, but it is indeed possible
+              and lighting can be the difference between a dream and a nightmare
+            </p>
+            <div class="pt-5">
+              <a
+                href="#"
+                class="inline-flex items-center justify-center px-8 py-2.5 text-base font-medium tracking-wide bg-transparent ring-inset ring-orange ring-2 text-gray-900 transition-all duration-200 ring-offset-transparent hover:ring-offset-2 focus:ring-offset-2"
+                role="button"
+                >Learn More
+              </a>
+            </div>
+          </div>
+          <div class="pt-16">
+            <img
+              src="images/custom-lighting.webp"
+              alt="Image of an example of Commercial Lighting"
+              class="w-full h-auto"
+            />
+            <p class="text-gray-900 text-2xl lg:text-3xl font-semibold pt-8">
+              Custom
+            </p>
+            <p class="text-base text-gray-500 pt-3">
+              In addition to retail and home we create custom solutions that are
+              tailor-made to whatever your heart desires.
+            </p>
+            <div class="pt-5">
+              <a
+                href="#"
+                class="inline-flex items-center justify-center px-8 py-2.5 text-base font-medium tracking-wide bg-transparent ring-inset ring-orange ring-2 text-gray-900 transition-all duration-200 ring-offset-transparent hover:ring-offset-2 focus:ring-offset-2"
+                role="button"
+                >Learn More
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT TYPES -->
+
+    <section class="mt-20">
+      <div class="grid grid-cols-1 md:grid-cols-2 md:grid-rows-1">
+        <div class="relative group overflow-hidden">
+          <img
+            src="images/mzumbi-estate.webp"
+            class="object-cover w-full h-full hover:scale-105 transition-all"
+          />
+          <p
+            class="text-2xl lg:text-3xl absolute top-3 left-3 font-semibold text-white"
+          >
+            Mzumbi Golf Estate
+          </p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 lg:grid-rows-2">
+          <div class="col-start-1 lg:col-span-1 relative overflow-hidden">
+            <img
+              src="images/rocomammas.webp"
+              class="w-full h-full object-cover hover:scale-110 transition-all"
+            />
+            <p
+              class="text-xl lg:text-2xl absolute top-3 left-3 font-semibold text-white"
+            >
+              Rocommamas Restaurant
+            </p>
+          </div>
+          <div class="col-span-1 lg:col-start-2 relative overflow-hidden group">
+            <img
+              src="images/mall.webp"
+              class="w-full h-auto group-hover:scale-110 transition-all"
+            />
+            <p
+              class="text-xl lg:text-2xl absolute top-3 left-3 font-semibold text-white z-10"
+            >
+              West-end Mall
+            </p>
+            <div
+              class="bg-[rgba(0,0,0,0.3)] w-full h-full absolute top-0 right-0"
+            ></div>
+          </div>
+          <div
+            class="col-span-1 lg:col-span-2 lg:row-start-2 relative overflow-hidden"
+          >
+            <img
+              src="images/hilti-home.webp"
+              class="hover:scale-110 transition-all"
+            />
+            <p
+              class="text-xl lg:text-2xl absolute top-3 left-3 font-semibold text-white"
+            >
+              Hilti CEO's Home
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIAL SECTION -->
+
+    <section class="py-12 bg-gray-50 md:py-12 lg:py-16">
+      <div class="max-w-7xl px-4 mx-auto sm:px-6 lg:px-8">
+        <h2
+          class="mt-6 text-2xl font-semibold tracking-wide lg:mt-8 sm:text-3xl lg:text-4xl uppercase text-gray-800"
+        >
+          Our clients say it best
+        </h2>
+        <div class="grid md:grid-cols-2 gap-16 pt-10">
+          <div class="pt-8 md:pt-20">
+            <svg
+              width="25"
+              height="22"
+              viewBox="0 0 25 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class=""
+            >
+              <path
+                d="M22.6562 10.9375H18.75V7.8125C18.75 6.08887 20.1514 4.6875 21.875 4.6875H22.2656C22.915 4.6875 23.4375 4.16504 23.4375 3.51562V1.17188C23.4375 0.522461 22.915 0 22.2656 0H21.875C17.5586 0 14.0625 3.49609 14.0625 7.8125V19.5312C14.0625 20.8252 15.1123 21.875 16.4062 21.875H22.6562C23.9502 21.875 25 20.8252 25 19.5312V13.2812C25 11.9873 23.9502 10.9375 22.6562 10.9375ZM8.59375 10.9375H4.6875V7.8125C4.6875 6.08887 6.08887 4.6875 7.8125 4.6875H8.20312C8.85254 4.6875 9.375 4.16504 9.375 3.51562V1.17188C9.375 0.522461 8.85254 0 8.20312 0H7.8125C3.49609 0 0 3.49609 0 7.8125V19.5312C0 20.8252 1.0498 21.875 2.34375 21.875H8.59375C9.8877 21.875 10.9375 20.8252 10.9375 19.5312V13.2812C10.9375 11.9873 9.8877 10.9375 8.59375 10.9375Z"
+                fill="#F58534"
+              />
+            </svg>
+            <p class="text-xl py-6 leading-relaxed">
+              Our experience with Diva Luce was quite outstanding. The whole
+              process was very professional from understanding what we wanted,
+              to working with us through each iteration of the design process
+              and finally delivering exactly what we wanted.
+            </p>
+            <svg
+              width="25"
+              height="22"
+              viewBox="0 0 25 22"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              class="-rotate-180"
+            >
+              <path
+                d="M22.6562 10.9375H18.75V7.8125C18.75 6.08887 20.1514 4.6875 21.875 4.6875H22.2656C22.915 4.6875 23.4375 4.16504 23.4375 3.51562V1.17188C23.4375 0.522461 22.915 0 22.2656 0H21.875C17.5586 0 14.0625 3.49609 14.0625 7.8125V19.5312C14.0625 20.8252 15.1123 21.875 16.4062 21.875H22.6562C23.9502 21.875 25 20.8252 25 19.5312V13.2812C25 11.9873 23.9502 10.9375 22.6562 10.9375ZM8.59375 10.9375H4.6875V7.8125C4.6875 6.08887 6.08887 4.6875 7.8125 4.6875H8.20312C8.85254 4.6875 9.375 4.16504 9.375 3.51562V1.17188C9.375 0.522461 8.85254 0 8.20312 0H7.8125C3.49609 0 0 3.49609 0 7.8125V19.5312C0 20.8252 1.0498 21.875 2.34375 21.875H8.59375C9.8877 21.875 10.9375 20.8252 10.9375 19.5312V13.2812C10.9375 11.9873 9.8877 10.9375 8.59375 10.9375Z"
+                fill="#F58534"
+              />
+            </svg>
+            <p class="text-xl font-semibold pt-12">Thomas Tank</p>
+            <p
+              class="text-base font-semibold pt-2 uppercase tracking-widest text-gray-500"
+            >
+              ceo, hilti group.
+            </p>
+          </div>
+          <img src="images/testimonial.jpg" class="w-full h-auto" />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
